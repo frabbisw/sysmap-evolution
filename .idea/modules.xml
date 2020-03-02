@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/soft.metrics.iml" filepath="$PROJECT_DIR$/.idea/modules/soft.metrics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/soft.metrics.main.iml" filepath="$PROJECT_DIR$/.idea/modules/soft.metrics.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/soft.metrics.test.iml" filepath="$PROJECT_DIR$/.idea/modules/soft.metrics.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysmap-full.iml" filepath="$PROJECT_DIR$/sysmap-full.iml" />
+    </modules>
+  </component>
+</project>
