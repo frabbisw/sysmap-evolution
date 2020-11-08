@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="soft.metrics" target="1.8" />
       <module name="soft.metrics.main" target="1.8" />
       <module name="soft.metrics.test" target="1.8" />
     </bytecodeTargetLevel>

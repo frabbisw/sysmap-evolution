@@ -18,7 +18,7 @@ public class BuildingBuilder {
     PhongMaterial buildingColor;
     double x0, x1, y0, y1, z0, z1;
     double cityWeightX, cityWeightY, cityWeightZ, cityWeightCoupling, cityWeightCohesion;
-    double loc=1, wmc=1;
+    double loc=1, wmc=1, nos=1;
     double coupling=1, lackCohesion=1;
     Stage primaryStage;
     String className;
@@ -30,6 +30,7 @@ public class BuildingBuilder {
         this.buildingColor=new PhongMaterial(Color.RED);
 
         this.loc= bossClass.getLoc();
+        this.nos= bossClass.getNos();
         this.wmc=Math.max(bossClass.getWmc(),1.0);
 
         this.coupling= bossClass.getLoggedCoupling();
@@ -63,6 +64,7 @@ public class BuildingBuilder {
     public double getLoc() {
         return loc;
     }
+
 
     public double getWmc() {
         return wmc;
@@ -124,7 +126,8 @@ public class BuildingBuilder {
         String msg = "";
         msg += ("Class Name: "+ bossClass.getClassName()+"\n");
         msg += ("Package Name: "+ bossClass.getPackageName()+"\n");
-        msg += ("Number of Statements: "+(int) bossClass.getLoc()+"\n");
+        msg += ("Line of Code: "+(int) bossClass.getLoc()+"\n");
+//        msg += ("Number of Statements: "+(int) bossClass.getNos()+"\n");
         msg += ("Comment Percentage: "+100*round(bossClass.getLoComments()/(bossClass.getLoComments()+ bossClass.getLoc()),4)+"%\n");
         msg += ("Coupling : "+(int) bossClass.getCoupling()+"\n");
         msg += ("Lack of Cohesion: "+(int) bossClass.getLackCohesion()+"\n");
