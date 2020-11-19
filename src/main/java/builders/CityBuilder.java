@@ -87,7 +87,7 @@ public class CityBuilder extends Application {
     }
 
     public void drawingEvolution() {
-        String [] pargs = superPath.split("/");
+        String [] pargs = superPath.split("\\\\");
         DrawEvolution.draw(pargs[pargs.length-1], evolutionDataOfVersions);
     }
 
@@ -136,7 +136,7 @@ public class CityBuilder extends Application {
                 }
             }
             String nameWithVersion = projectFilePaths.get(version);
-            String [] versionArgs = nameWithVersion.split("/");
+            String [] versionArgs = nameWithVersion.split("\\\\");
             projectFileNames.add(versionArgs[versionArgs.length-1]);
 
             evolutionDataOfVersions.add(new EvolutionData((int)numberOfPlots, (int)numberOfBuildings, (int)numberOfskyscraper, (int)numberOfHeavyBuildings, versionArgs[versionArgs.length-1]));
@@ -158,7 +158,7 @@ public class CityBuilder extends Application {
 
     private void prepareFiles() {
         JFileChooser chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new File("/home/rabbi/Desktop/re/sysmap/dataset"));
+        chooser.setCurrentDirectory(new File("C:\\Users\\User\\Desktop\\sysmap"));
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int returnVal = chooser.showOpenDialog(null);
         if(returnVal == JFileChooser.APPROVE_OPTION) {
